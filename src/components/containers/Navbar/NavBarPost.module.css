@@ -1,0 +1,45 @@
+
+
+/* NavBar superior */
+.navBar_cont{
+    width:82%;
+    height: 65px;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    z-index: 106;
+    /* background:red; */
+}
+.navBar{
+    position:fixed;
+    top:10px;
+    width:82%;
+    padding-top:8px;
+    height: 49px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.imgReturn{
+    width:30px;
+    height:30px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.imgBuscar,.imgOptions{
+    border-radius: 20px;
+    cursor: pointer;
+    object-fit: contain;
+}
+.imgBuscar{
+    width:27px;
+    height:45px;
+}
+.imgOptions{
+    width:12px;
+    height:27px;
+    margin-left:28px;
+    margin-bottom:9px;
+}
