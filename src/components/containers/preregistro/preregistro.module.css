@@ -41,7 +41,14 @@
 #position{
     position: absolute;
 }
+textarea {
+    background-color: red;
+    margin-left: -30px !important;
+    background-color: red;
+}
+.inpu{
 
+}
 
 .divLoad{
     width: 500px;

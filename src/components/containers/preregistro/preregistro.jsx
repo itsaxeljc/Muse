@@ -78,7 +78,7 @@ export function PreregistroContainer(props) {
                     <label>Correo electrónico</label>
                     <input type="email" name="user_email" />
                     <label>Mensaje</label>
-                    <textarea name="message" />
+                    <textarea name="message"  className={styles.iput}/>
                     
                     <input type="submit" value="Enviar" 
                     onClick={() => {
@@ -126,7 +126,7 @@ const Wrapper = styled.div`
     overflow-x: hidden;
     overflow-y: hidden;
     background: #171717;
-    position: relative;
+    // position: relative;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
