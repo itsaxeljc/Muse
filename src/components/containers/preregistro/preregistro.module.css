@@ -42,6 +42,25 @@
     position: absolute;
 }
 
+
+.divLoad{
+    width: 500px;
+    min-width: 300px;
+    height: 3px;
+    /* min-height: 28px; */
+    margin-bottom: 30px;
+    padding: 0 0 0 10px;
+
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    /* background-color: white; */
+    transition: 1s;
+    margin-left:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .lds_ellipsis {
     display: inline-block;
     position: relative;
