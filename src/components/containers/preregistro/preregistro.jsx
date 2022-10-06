@@ -1,5 +1,5 @@
 import React, {useRef, useState } from 'react';
-// import styles from "./preregistro.module.css";
+import styles from "./preregistro.module.css";
 import styled from 'styled-components';
 import { motion } from "framer-motion";
 // import { useNavigate } from 'react-router-dom';
@@ -16,6 +16,7 @@ export function PreregistroContainer(props) {
 
     const [show, setShow] = useState(true);
     const [showI, setShowI] = useState(false);
+    const [showLoad, setShowLoad] = useState(false);
 
     const form = useRef();
 
@@ -28,6 +29,7 @@ export function PreregistroContainer(props) {
             console.log("message sent")
             setShow(!show);
             setShowI(!showI);
+            setShowLoad(false);
         }, (error) => {
             console.log(error.text);
         });
@@ -35,12 +37,12 @@ export function PreregistroContainer(props) {
 
     return (
         <>
-        <div className={styled.lds_ellipsis}><div></div><div></div><div></div><div></div></div>
         <Wrapper>
             <NavbarLanding></NavbarLanding>
             <Artist className="collage">
                 <img alt="Artista portada" src={Cover}></img>
             </Artist>
+        
             <Content>
                 <motion.h1 
                 initial={{
@@ -76,12 +78,19 @@ export function PreregistroContainer(props) {
                     <label>Correo electrónico</label>
                     <input type="email" name="user_email" />
                     <label>Mensaje</label>
-                    <textarea name="message" />
+                    <textarea name="message"  className={styles.iput}/>
+                    
                     <input type="submit" value="Enviar" 
                     onClick={() => {
-                        
+                        setShowLoad(true);
                     }}/>
+                    {showLoad ? ( <div className={styles.divLoad}> <div className={styles.lds_ellipsis}><div></div><div></div><div></div><div></div></div></div> ) : null}
+                    
+                    
+                    
                 </form> : null}
+                
+                
                 {showI ? 
                     <p>Gracias por escribirnos.</p> : null}
 
@@ -117,7 +126,7 @@ const Wrapper = styled.div`
     overflow-x: hidden;
     overflow-y: hidden;
     background: #171717;
-    position: relative;
+    // position: relative;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -248,11 +257,11 @@ const Content = styled.div`
     top: 220px;
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     gap:40px;
     
+
     @media (max-width: 1200px){
         gap: 40px;
     }
