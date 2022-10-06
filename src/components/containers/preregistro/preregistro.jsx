@@ -1,18 +1,18 @@
 import React, {useRef, useState } from 'react';
-import styles from "./preregistro.module.css";
+// import styles from "./preregistro.module.css";
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-import Cover from '../../assets/landing/Cover.png'
-import {NavbarLanding} from '../Navbar_landing/Navbar_landing';
+import Cover from '../../../assets/landing/Cover.png';
+import {NavbarLanding} from '../../Navbar_landing/Navbar_landing';
 
 
 
 //Assets
 
 export function PreregistroContainer(props) {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const [show, setShow] = useState(true);
     const [showI, setShowI] = useState(false);
@@ -26,12 +26,16 @@ export function PreregistroContainer(props) {
         .then((result) => {
             console.log(result.text);
             console.log("message sent")
+            setShow(!show);
+            setShowI(!showI);
         }, (error) => {
             console.log(error.text);
         });
     };
 
     return (
+        <>
+        <div className={styled.lds_ellipsis}><div></div><div></div><div></div><div></div></div>
         <Wrapper>
             <NavbarLanding></NavbarLanding>
             <Artist className="collage">
@@ -75,16 +79,19 @@ export function PreregistroContainer(props) {
                     <textarea name="message" />
                     <input type="submit" value="Enviar" 
                     onClick={() => {
-                        setShow(!show);
-                        setShowI(!showI);
+                        
                     }}/>
                 </form> : null}
                 {showI ? 
                     <p>Gracias por escribirnos.</p> : null}
+
+                    
             </Content>
         </Wrapper>
+        
+        </>
 
-    );
+);
 
 };
 
@@ -182,59 +189,59 @@ const Wrapper = styled.div`
     }
 `;
 
-const Mensaje = styled.div`
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    gap: 10px;
-    // font
-        font-family: "Inter",Helvetica;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        color: #ffffff;
-        user-select: none;
-        margin: 0 30px 0 100px;
+// const Mensaje = styled.div`
+//     display: flex;
+//     width: 100%;
+//     flex-direction: column;
+//     gap: 10px;
+//     // font
+//         font-family: "Inter",Helvetica;
+//         font-style: normal;
+//         font-weight: 500;
+//         font-size: 16px;
+//         color: #ffffff;
+//         user-select: none;
+//         margin: 0 30px 0 100px;
 
-        @media (max-width: 1024px){
-            margin: 0 30px 0 30px;
-        }
-    textarea{
-        width: 500px;
-        min-width: 300px;
-        margin-left: 0;
-        height: 100px;
-        min-height: 48px;
-        padding: 0 0 0 10px;
-        background: rgba(116, 116, 116, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(40px);
-        /* Note: backdrop-filter has minimal browser support */
-        border-radius: 10px;
-        // font
-        font-family: "Inter",Helvetica;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 21px;
-        color: #ffffff;
-        user-select: none;
+//         @media (max-width: 1024px){
+//             margin: 0 30px 0 30px;
+//         }
+//     textarea{
+//         width: 500px;
+//         min-width: 300px;
+//         margin-left: 0;
+//         height: 100px;
+//         min-height: 48px;
+//         padding: 0 0 0 10px;
+//         background: rgba(116, 116, 116, 0.05);
+//         border: 1px solid rgba(255, 255, 255, 0.2);
+//         backdrop-filter: blur(40px);
+//         /* Note: backdrop-filter has minimal browser support */
+//         border-radius: 10px;
+//         // font
+//         font-family: "Inter",Helvetica;
+//         font-style: normal;
+//         font-weight: 500;
+//         font-size: 21px;
+//         color: #ffffff;
+//         user-select: none;
 
-        //transition
-        transition: 1s;
+//         //transition
+//         transition: 1s;
 
-        &:focus {
-            border: 1px solid rgba(255, 255, 255, 0.8);
-        }
+//         &:focus {
+//             border: 1px solid rgba(255, 255, 255, 0.8);
+//         }
 
-        @media (max-width:875px){
-            width: 80%;
-        }
+//         @media (max-width:875px){
+//             width: 80%;
+//         }
 
-        @media (max-width:375px){
-            scale: 0.8;
-        }
-    }
-`;
+//         @media (max-width:375px){
+//             scale: 0.8;
+//         }
+//     }
+// `;
 
 const Content = styled.div`
     position: absolute;

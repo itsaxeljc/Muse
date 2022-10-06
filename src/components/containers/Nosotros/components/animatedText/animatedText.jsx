@@ -15,7 +15,7 @@ export function AnimatedText(props) {
             setWord(phrase[0]);
             setCount(count + 1);
 
-            if(count == 1){
+            if(count === 1){
                 setCount(0);
                 setWord(phrase[1]);
             }

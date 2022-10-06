@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import { motion } from "framer-motion";
 
 //Assets
-import Artista1 from '../../../../assets/landing/cover-artist.svg';
-import Artista2 from '../../../../assets/landing/nia.svg';
-import Artista3 from '../../../../assets/landing/artist-1.svg';
-import Artista4 from '../../../../assets/landing/artist-2.svg';
-import Artista5 from '../../../../assets/landing/artist-3.svg';
+import Artista1 from '../../../../../assets/landing/cover-artist.svg';
+import Artista2 from '../../../../../assets/landing/nia.svg';
+import Artista3 from '../../../../../assets/landing/artist-1.svg';
+import Artista4 from '../../../../../assets/landing/artist-2.svg';
+import Artista5 from '../../../../../assets/landing/artist-3.svg';
 
 export function ThirdContainer(props) {
 

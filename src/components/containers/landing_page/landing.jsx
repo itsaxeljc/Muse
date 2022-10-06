@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import Spline from '@splinetool/react-spline';
-import Facebook from '../../assets/logo/facebook_landing.svg';
-import Instagram from '../../assets/logo/insta_landing.svg';
-import Tiktok from '../../assets/logo/tiktok_landing.svg';
+import Facebook from '../../../assets/logo/facebook_landing.svg';
+import Instagram from '../../../assets/logo/insta_landing.svg';
+import Tiktok from '../../../assets/logo/tiktok_landing.svg';
 import { useNavigate } from 'react-router-dom';
 
 //Componentes
-import {NavbarLanding} from '../Navbar_landing/Navbar_landing';
+import {NavbarLanding} from '../../Navbar_landing/Navbar_landing';
 
 export function LandingContainer(props) {
     const navigate = useNavigate();

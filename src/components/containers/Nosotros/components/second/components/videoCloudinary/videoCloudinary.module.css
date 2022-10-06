@@ -39,7 +39,7 @@
   .playIcon {
     width: 70px;
     height: 70px;
-    background: center/cover url("../../../../../../assets/icons/play_button_video.svg");
+    background: center/cover url("../../../../../../../assets/icons/play_button_video.svg");
     cursor: pointer;
     margin-left: 20px;
     margin-right: 20px;

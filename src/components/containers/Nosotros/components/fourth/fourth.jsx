@@ -4,11 +4,12 @@ import styled from 'styled-components';
 import { motion } from "framer-motion";
 
 //Assets
-import Place1 from '../../../../assets/landing/cover-place.svg';
-import Place2 from '../../../../assets/landing/place-1.svg';
-import Place3 from '../../../../assets/landing/place-2.svg';
-import Place4 from '../../../../assets/landing/place-3.svg';
-import Place5 from '../../../../assets/landing/place-4.svg';
+import Place1 from '../../../../../assets/landing/cover-place.svg';
+import Place2 from '../../../../../assets/landing/place-1.svg';
+import Place3 from '../../../../../assets/landing/place-2.svg';
+import Place4 from '../../../../../assets/landing/place-3.svg';
+import Place5 from '../../../../../assets/landing/place-4.svg';
+
 
 export function FourthContainer(props) {
 

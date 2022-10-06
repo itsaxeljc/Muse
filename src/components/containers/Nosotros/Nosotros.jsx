@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 //Componentes
-import {NavbarLanding} from '../Navbar_landing/Navbar_landing';
+import {NavbarLanding} from '../../Navbar_landing/Navbar_landing';
 import {AnimatedText} from './components/animatedText/animatedText';
 import {SecondContainer} from './components/second/second';
 import {ThirdContainer} from './components/third/thrid';
@@ -79,7 +79,7 @@ const ContainerY = styled.div`
     height: 100%;
 `;
 
-const ContainerX = styled.div`
-    white-space: nowrap;
-    overflow-x: scroll;
-`;
+// const ContainerX = styled.div`
+//     white-space: nowrap;
+//     overflow-x: scroll;
+// `;
