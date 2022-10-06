@@ -22,9 +22,9 @@ export function LandingContainer(props) {
                 </Content>
                 <SocialLinks>
                     <div/>
-                    <img src={Facebook} alt="Facebook" draggable="false"></img>
-                    <img src={Instagram} alt="Instagram" draggable="false"></img>
-                    <img src={Tiktok} alt="TikTok" draggable="false"></img>
+                    <a href="https://www.facebook.com/museartmx"><img src={Facebook} alt="Facebook" draggable="false"></img></a>
+                    <a href="https://www.instagram.com/museartmx"><img src={Instagram} alt="Instagram" draggable="false"></img></a>
+                    <a href="https://www.tiktok.com/@museartmx"><img src={Tiktok} alt="TikTok" draggable="false"></img></a>
                 </SocialLinks>
             </Wrapper>
             

@@ -14,9 +14,8 @@ export function NavbarLanding() {
             <Menu>
             <li><span onClick={() =>navigate('/landing')}>Inicio</span></li>
                 <li><span onClick={() =>navigate('/nosotros')}>Nosotros</span></li>
-                <li><span href="/">Ayuda</span></li>
                 <li><span onClick={() =>navigate('/preregistro')}>Registrarse</span></li>
-                <li onClick={() =>navigate('/inicio')}><button>Iniciar Demo</button></li>
+                <li onClick={() =>navigate('/preregistro')}><button>Solicitar demo</button></li>
                 <img src={More} alt="Menú desplegable" onClick={() => setShow(!show)} draggable="false"></img>
                 <div>
                 {
@@ -24,7 +23,6 @@ export function NavbarLanding() {
                         <div>
                             <span onClick={() =>navigate('/landing')}>Inicio</span>
                             <span onClick={() =>navigate('/nosotros')}>Nosotros</span>
-                            <span href="/">Ayuda</span>
                             <span onClick={() =>navigate('/preregistro')}>Registrarse</span>
                         </div>
                     </Dropdown>: null

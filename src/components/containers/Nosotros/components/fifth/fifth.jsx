@@ -6,9 +6,9 @@ import { useNavigate } from 'react-router-dom';
 
 //Assets
 import Final1 from '../../../../../assets/landing/cover-final.svg';
-import Final2 from '../../../../../assets/landing/final-1.svg';
-import Final3 from '../../../../../assets/landing/final-2.svg';
-import Final4 from '../../../../../assets/landing/final-3.svg';
+import Final2 from '../../../../../assets/landing/final-1.png';
+import Final3 from '../../../../../assets/landing/final-2.png';
+import Final4 from '../../../../../assets/landing/final-3.png';
 import Final5 from '../../../../../assets/landing/final-4.svg';
 
 export function FifthContainer(props) {

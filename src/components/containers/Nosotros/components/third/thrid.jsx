@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { motion } from "framer-motion";
 
 //Assets
-import Artista1 from '../../../../../assets/landing/cover-artist.svg';
+import Artista1 from '../../../../../assets/landing/cover-artist.png';
 import Artista2 from '../../../../../assets/landing/nia.svg';
 import Artista3 from '../../../../../assets/landing/artist-1.svg';
 import Artista4 from '../../../../../assets/landing/artist-2.svg';

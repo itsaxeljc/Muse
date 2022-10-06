@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Spline from '@splinetool/react-spline';
 import { VideoCloudinary } from "./components/videoCloudinary/videoCloudinary";
 import { motion } from "framer-motion";
+import Nous from "../../../../../assets/landing/nosotros.jpg";
 
 
 export function SecondContainer(props) {
@@ -20,10 +21,7 @@ export function SecondContainer(props) {
                 delay: 0.3,
                 default: { ease: "linear" }
             }}>
-                <VideoCloudinary
-                    title="Somos Muse"
-                    idVideo="Todo_En_Todas_Partes_Al_Mismo_TIempo_2022_ze4ifp"
-                ></VideoCloudinary>
+                <img src={Nous}></img>
             </motion.div>
             <Content>
                 <motion.h1
@@ -86,6 +84,15 @@ const Wrapper = styled.div`
         width: 40vw;
         height: 491px;
         z-index: 1;
+        background-image: url({{Nous}});
+        background-size: cover;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
 
         @media (max-width: 1500px){
             transform: scale(0.9) translateX(60px) translateY(150px);
