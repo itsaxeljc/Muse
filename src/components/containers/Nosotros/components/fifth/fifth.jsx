@@ -52,7 +52,7 @@ export function FifthContainer(props) {
                     duration:2,
                     default: { ease: "linear" }
                 }}>La cultura es hoy, hecha por todos y para todos. Somos el inicio de un movimiento de transformación cultural.</motion.p>
-                <button onClick={() =>navigate('/inicio')}>Comenzar ahora</button>
+                <button onClick={() =>navigate('/preregistro')}>Comenzar ahora</button>
             </Content>
         </Wrapper>
 
@@ -76,8 +76,8 @@ const Wrapper = styled.div`
     font-size: 16px;
     color:white;
     width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
+    height: 105vh;
+    overflowx: hidden;
     overflow-y: hidden;
     background: #171717;
     position: relative;
@@ -188,7 +188,7 @@ const Content = styled.div`
 
         @media (max-width: 1280px){
             font-size: 60px;
-            max-width: 400px;
+            max-width: 90%;
             padding-top: 40vh;
         }
 

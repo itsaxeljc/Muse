@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Spline from '@splinetool/react-spline';
-import { VideoCloudinary } from "./components/videoCloudinary/videoCloudinary";
+import Facebook from '../../../../../assets/logo/facebook_landing.svg';
+import Instagram from '../../../../../assets/logo/insta_landing.svg';
+import Tiktok from '../../../../../assets/logo/tiktok_landing.svg';
 import { motion } from "framer-motion";
 import Nous from "../../../../../assets/landing/nosotros.jpg";
 
@@ -52,6 +54,25 @@ export function SecondContainer(props) {
                     duration:2,
                     default: { ease: "linear" }
                 }}>Una plataforma que busca transformar la manera en que la tecnología y la cultura se fusionan para crear un espacio seguro donde artistas independientes y organismos culturales compartan la riqueza de la identidad cultural de nuestra región.</motion.p>
+                <motion.div
+                initial={{
+                    opacity: 0,
+                    translateY: 35
+                }}
+                whileInView = {{
+                    opacity:1,
+                    translateY: 0
+                }} 
+                transition={{ 
+                    delay: 0.01,
+                    duration:2,
+                    default: { ease: "linear" }
+                }}>Escríbenos a museart.mx@gmail.com o síguenos en:<div>
+                    <a href="https://www.facebook.com/museartmx"><img src={Facebook} alt="Facebook" draggable="false"></img></a>
+                    <a href="https://www.instagram.com/museartmx"><img src={Instagram} alt="Instagram" draggable="false"></img></a>
+                    <a href="https://www.tiktok.com/@museartmx"><img src={Tiktok} alt="TikTok" draggable="false"></img></a>
+                    </div>
+                </motion.div>
             </Content>
         </Wrapper>
 
@@ -68,6 +89,9 @@ const Wrapper = styled.div`
     overflow-y: hidden;
     background: #171717;
     position: relative;
+    @media (max-height: 800px){
+        height: 115vh;
+    }
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -246,6 +270,25 @@ const Content = styled.div`
         gap: 20px;
     }
 
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-weight:450;
+        line-height: 150%;
+        max-width: 600px;
+        font-size: 16px;
+        
+        div{
+            display: flex;
+            flex-direction: row;
+            margin-left: 0px;
+        }
+        @media (max-height: 800px){
+            scale: 0.9;
+            margin-left: 10px!important;
+        }
+    }
     h1{
         font-weight: bold;
         font-size: 70px;
@@ -312,7 +355,7 @@ const Content = styled.div`
         }
     }
 
-    h1,p{
+    h1,p,div{
         margin: 0 30px 0 100px;
 
         @media (max-width: 1024px){

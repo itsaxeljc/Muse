@@ -3,22 +3,30 @@ import Spline from '@splinetool/react-spline';
 import Facebook from '../../../assets/logo/facebook_landing.svg';
 import Instagram from '../../../assets/logo/insta_landing.svg';
 import Tiktok from '../../../assets/logo/tiktok_landing.svg';
+import Landing from '../../../assets/landing/Landing.png';
 import { useNavigate } from 'react-router-dom';
+import { useMediaQuery } from "react-responsive";
 
 //Componentes
 import {NavbarLanding} from '../../Navbar_landing/Navbar_landing';
 
 export function LandingContainer(props) {
     const navigate = useNavigate();
+    const esMovil = useMediaQuery ({ query: "max-width:800px" })
 
     return (
         <Wrapper >
-                <Spline className="spline" scene="https://prod.spline.design/Db8beaaeDVYHKeJw/scene.splinecode" />
+                {(esMovil) ? 
+                    <Spline>
+                        <img src={Landing}></img>
+                    </Spline>:
+                    <Spline className="spline" scene="https://prod.spline.design/Db8beaaeDVYHKeJw/scene.splinecode" />
+                    }
                 <Content>
                 <NavbarLanding></NavbarLanding>
                     <h1>Descubre la cultura local</h1>
                     <p>Explora la cultura en tu ciudad, descubre eventos, compra arte y apoya artistas independientes.</p>
-                    <button onClick={() =>navigate('/inicio')}>Comenzar ahora</button>
+                    <button onClick={() =>navigate('/preregistro')}>Comenzar ahora</button>
                 </Content>
                 <SocialLinks>
                     <div/>
@@ -68,7 +76,7 @@ const Wrapper = styled.div`
             transform: scale(0.7) translateX(750px);
         }
 
-        @media (max-width: 760px){
+        @media (max-width: 740px){
             transform: scale(0.5) translateX(-90px);
             right: auto;
             left: 50%;
@@ -80,7 +88,7 @@ const Wrapper = styled.div`
             transform: scale(0.45);
         }
 
-        @media (max-height: 750px){
+        @media (max-height: 720px){
             transform: scale(0.4);
             top: 10vh;
         }

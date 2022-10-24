@@ -44,7 +44,9 @@ export function VideoCloudinary(props) {
           objectFit: "cover",
         }}
         preload="auto"
+        preview="auto"
         poster={urlPoster}
+        loop="true"
         controls={toggleState === 0 ? false : true}
         autoPlay={toggleState === 0 ? false : true}
       />

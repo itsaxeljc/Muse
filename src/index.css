@@ -53,16 +53,16 @@ code {
 
 /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
 
-.scroll::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 6px;     /* Tamaño del scroll en vertical */
   height: 6px;    /* Tamaño del scroll en horizontal */
 }
 /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
-.scroll::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #595959;
   border-radius: 4px;
 }
 /* Ponemos un color de fondo y redondeamos las esquinas del track */
-.scroll::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   border-radius: 10px;  
 }

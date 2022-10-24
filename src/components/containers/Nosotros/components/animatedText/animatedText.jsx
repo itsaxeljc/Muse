@@ -47,6 +47,8 @@ const Text = styled.div`
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
     span{
         font-weight: 700;
         font-size: 96px;

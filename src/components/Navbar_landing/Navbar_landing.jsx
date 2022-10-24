@@ -102,7 +102,7 @@ const MenuContainer = styled.div`
     }
 
     @media (max-width: 500px){
-        scale: 0.7;
+        scale: 0.8;
         gap: 100px;
         margin-left: -1vh;
     }
