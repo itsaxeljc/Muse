@@ -22,7 +22,7 @@ export function NosotrosContainer(props) {
             <Content>
             <NavbarLanding></NavbarLanding>
             <ContainerY id="main">
-                <AnimatedText text="¡Hola, Culiacán!" text2="Somos Muse" ></AnimatedText>
+                <AnimatedText text="¡Hola, Durango!" text2="Somos Muse" ></AnimatedText>
                 <SecondContainer></SecondContainer>
                 <ThirdContainer></ThirdContainer>
                 <FourthContainer></FourthContainer>

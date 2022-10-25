@@ -78,7 +78,7 @@ export function PreregistroContainer(props) {
                     delay: 0.01,
                     duration:2,
                     default: { ease: "linear" }
-                }}>¿Estás listo para formar parte de este movimiento de transformación cultural. Realiza tu preregistro hoy y obtén una notificación cuando Muse esté listo.</motion.p>
+                }}>¿Estás listo para formar parte de este movimiento de transformación cultural? Realiza tu pre registro hoy y obtén una notificación cuando Muse esté listo.</motion.p>
                 {show ? <form ref={form} onSubmit={sendEmail}>
                     <label>Nombre</label>
                     <input type="text" name="from_name" />
