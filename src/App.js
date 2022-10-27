@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 // import { Redirect } from "react-router";
 
 import { LandingContainer } from "./components/containers/landing_page/landing";
@@ -9,15 +9,13 @@ import { PreregistroContainer } from "./components/containers/preregistro/prereg
 function App() {
   return (
       <div className="MainContainerLanding" id="main-container-landing">
-        
         <Routes>
           <Route index element={<LandingContainer />} /> 
           <Route path="/nosotros" element={<NosotrosContainer />} />
           <Route path="/preregistro" element={<PreregistroContainer />} />
-          <Route path="/landing" element={<LandingContainer />} />
-          <Route path="/*" element={<LandingContainer />} />
+          <Route path="/landing" index element={<LandingContainer />} />
+          <Route path="/*"  element={<LandingContainer />} />
         </Routes>
-
      </div>
     );
 }
