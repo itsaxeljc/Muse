@@ -45,8 +45,8 @@ export function PreregistroContainer(props) {
             <NavbarLanding></NavbarLanding>
             <Artist className="collage">
                 <VideoCloudinary
-                title="La cultura en todas partes"
-                idVideo="IMG_3850_atygqw"
+                title="Somos Muse"
+                idVideo="IMG_4440_vgpwrh"
             ></VideoCloudinary>
             </Artist>
         

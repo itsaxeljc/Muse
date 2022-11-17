@@ -50,7 +50,7 @@ export function FourthContainer(props) {
                     delay: 0.01,
                     duration:2,
                     default: { ease: "linear" }
-                }}>Eventos y espacios culturales para todos. Somos una plataforma que busca concentrar los eventos y espacios culturales de la ciudad en un solo lugar, buscar hacer mayor difusión de lo que nuestra tierra tiene para ofrecer.</motion.p>
+                }}>Eventos y espacios culturales para todos. Somos una plataforma que busca concentrar los eventos y espacios culturales de la ciudad en un solo lugar, creando mayor difusión de lo que nuestra tierra tiene para ofrecer.</motion.p>
             </Content>
         </Wrapper>
 
